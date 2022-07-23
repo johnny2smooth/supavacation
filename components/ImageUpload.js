@@ -19,7 +19,7 @@ const ImageUpload = ({
   const [updatingPicture, setUpdatingPicture] = useState(false);
   const [pictureError, setPictureError] = useState(null);
 
-  const handleOnChangePicture = e => {
+  const handleOnChangePicture = (e) => {
     const file = e.target.files[0];
     const reader = new FileReader();
 
